@@ -59,19 +59,76 @@
             width: 200px;
             padding: 20px;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
         }
 
         #window1 { top: 20%; left: 20%; transform: translate(-20%, -20%); }
         #window2 { top: 20%; right: 20%; transform: translate(20%, -20%); }
         #window3 { bottom: 20%; left: 20%; transform: translate(-20%, 20%); }
         #window4 { bottom: 20%; right: 20%; transform: translate(20%, 20%); }
+
+        @media (max-width: 768px) {
+            .fixed-nav nav ul {
+                flex-direction: column;
+            }
+
+            .fixed-nav nav ul li {
+                margin: 10px 0;
+            }
+
+            .window {
+                width: 80%;
+                left: 10%;
+                transform: none;
+            }
+
+            #window1, #window2, #window3, #window4 {
+                top: auto;
+                bottom: auto;
+                left: 10%;
+                right: 10%;
+                margin: 10px 0;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="fixed-nav">
         <nav aria-label="Main navigation">
             <ul>
-                <li><a href="#">Home
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header class="header">
+        <h1>Bem-vindo à Página de Frutas</h1>
+        <p>Conheça as delícias tropicais!</p>
+    </header>
+
+    <main>
+        <div id="window1" class="window">
+            <h2>Window 1</h2>
+            <p>Conteúdo da primeira janela flutuante.</p>
+        </div>
+
+        <div id="window2" class="window">
+            <h2>Window 2</h2>
+            <p>Conteúdo da segunda janela flutuante.</p>
+        </div>
+
+        <div id="window3" class="window">
+            <h2>Window 3</h2>
+            <p>Conteúdo da terceira janela flutuante.</p>
+        </div>
+
+        <div id="window4" class="window">
+            <h2>Window 4</h2>
+            <p>Conteúdo da quarta janela flutuante.</p>
+        </div>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
