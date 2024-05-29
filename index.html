@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frutas</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-3FuQ6Llhz2GiG+QRi11zQv1D6iy96UzP3ox43xRjQ2ejIHl6wsyquKYVg5SyYQKpmCXZ69JL+vo7fyymoClzeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* Additional styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -26,7 +26,24 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        /* Header styles */
+        .fixed-nav nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .fixed-nav nav ul li {
+            margin: 0 15px;
+        }
+
+        .fixed-nav nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
         .header {
             background-color: #333;
             color: white;
@@ -34,7 +51,6 @@
             padding: 20px;
         }
 
-        /* Floating window styles */
         .window {
             background-color: #fff;
             border: 1px solid #ccc;
@@ -48,54 +64,14 @@
             transform: translate(-50%, -50%);
         }
 
-        /* Different positions for each window */
-        #window1 { top: 20%; left: 20%; }
-        #window2 { top: 20%; right: 20%; }
-        #window3 { bottom: 20%; left: 20%; }
-        #window4 { bottom: 20%; right: 20%; }
+        #window1 { top: 20%; left: 20%; transform: translate(-20%, -20%); }
+        #window2 { top: 20%; right: 20%; transform: translate(20%, -20%); }
+        #window3 { bottom: 20%; left: 20%; transform: translate(-20%, 20%); }
+        #window4 { bottom: 20%; right: 20%; transform: translate(20%, 20%); }
     </style>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="fixed-nav">
-        <!-- Navigation content goes here -->
-        <nav>
+        <nav aria-label="Main navigation">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <!-- Header section -->
-    <div class="header">
-        <h1>Bem-vindo à Página de Frutas</h1>
-        <p>Conheça as delícias tropicais!</p>
-    </div>
-
-    <!-- Floating windows -->
-    <div id="window1" class="window">
-        <h2>Window 1</h2>
-        <p>Conteúdo da primeira janela flutuante.</p>
-    </div>
-
-    <div id="window2" class="window">
-        <h2>Window 2</h2>
-        <p>Conteúdo da segunda janela flutuante.</p>
-    </div>
-
-    <div id="window3" class="window">
-        <h2>Window 3</h2>
-        <p>Conteúdo da terceira janela flutuante.</p>
-    </div>
-
-    <div id="window4" class="window">
-        <h2>Window 4</h2>
-        <p>Conteúdo da quarta janela flutuante.</p>
-    </div>
-
-    <script src="scripts.js"></script>
-</body>
-</html>
-
+                <li><a href="#">Home
