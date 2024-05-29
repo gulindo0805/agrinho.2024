@@ -33,6 +33,26 @@
             text-align: center;
             padding: 20px;
         }
+
+        /* Floating window styles */
+        .window {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Different positions for each window */
+        #window1 { top: 20%; left: 20%; }
+        #window2 { top: 20%; right: 20%; }
+        #window3 { bottom: 20%; left: 20%; }
+        #window4 { bottom: 20%; right: 20%; }
     </style>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -54,8 +74,28 @@
         <p>Conheça as delícias tropicais!</p>
     </div>
 
-    <!-- Page content goes here -->
+    <!-- Floating windows -->
+    <div id="window1" class="window">
+        <h2>Window 1</h2>
+        <p>Conteúdo da primeira janela flutuante.</p>
+    </div>
+
+    <div id="window2" class="window">
+        <h2>Window 2</h2>
+        <p>Conteúdo da segunda janela flutuante.</p>
+    </div>
+
+    <div id="window3" class="window">
+        <h2>Window 3</h2>
+        <p>Conteúdo da terceira janela flutuante.</p>
+    </div>
+
+    <div id="window4" class="window">
+        <h2>Window 4</h2>
+        <p>Conteúdo da quarta janela flutuante.</p>
+    </div>
 
     <script src="scripts.js"></script>
 </body>
 </html>
+
