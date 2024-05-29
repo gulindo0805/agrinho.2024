@@ -5,23 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Página</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        header {
-            background-color: green;
-            color: white;
-            padding: 70px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
+        /* CSS for the floating window */
         .window {
             background-color: #f0f0f0;
             border: 1px solid #ccc;
@@ -33,23 +17,22 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            cursor: pointer; /* Change cursor to pointer on hover */
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Título da Minha Página</h1>
-    </header>
-
-    <!-- Floating Windows -->
-    <div class="window">
-        <h2>Window 1</h2>
-        <p>Conteúdo da primeira janela flutuante.</p>
+    <!-- Floating Window -->
+    <div class="window" onclick="navigateToPage('page2.html')">
+        <h2>Click here to go to Page 2</h2>
     </div>
 
-    <div class="window" style="top: 30%; left: 70%;">
-        <h2>Window 2</h2>
-        <p>Conteúdo da segunda janela flutuante.</p>
-    </div>
+    <!-- JavaScript to handle navigation -->
+    <script>
+        function navigateToPage(pageUrl) {
+            window.location.href = pageUrl; // Navigate to the specified page
+        }
+    </script>
 </body>
 </html>
+
