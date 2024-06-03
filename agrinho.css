@@ -1,77 +1,428 @@
-/* Estilos gerais */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
 }
 
-.fixed-nav {
+/* HEADER */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #135B2B;
+    color: #f1f1f1;
     position: fixed;
-    top: 0;
-    left: 0;
+    z-index: 5;
     width: 100%;
-    background-color: rgba(51, 51, 51, 0.9);
-    padding: 10px 0;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.fixed-nav nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.cabecalho img {
+    width: 30px;
+}
+
+.cabecalho-nav .cabecalho-lista {
+    list-style: none;
     display: flex;
-    justify-content: center;
+    gap: 30px;
 }
 
-.fixed-nav nav ul li {
-    margin: 0 15px;
+.cabecalho-lista .cabecalho-lista-item {
+    font-size: 14px;
 }
 
-.fixed-nav nav ul li a {
-    color: white;
+.cabecalho-lista a {
+    color: #f1f1f1;
     text-decoration: none;
-    font-weight: bold;
 }
 
-.header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.cabecalho-lista a:hover {
+    transition: .2s;
+    cursor: pointer;
+    color: #d1d1d1;
+}
+
+/* Ações Section */
+.background {
     width: 100%;
-    margin-top: 50px; /* Espaço para a barra de navegação fixa */
-}
-
-.windows-container {
+    height: 600px;
+    background: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    width: 100%;
-    margin-top: 20px; /* Espaço adicional para ajustar as janelas abaixo do cabeçalho */
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
 }
 
-.window {
+.acoes-section {
+    background-color: #E5E8E6;
+    padding: 30px 0 80px 0;
+}
+
+.acoes-titulo {
+    text-align: center;
+    font-size: 35px;
+}
+
+.acoes-cta {
+    text-align: center;
+    font-size: 25px;
+    margin: 30px 0;
+}
+
+.acoes-descricao {
+    width: 850px;
+    margin: 0 auto 10px;
+}
+
+.acoes-descricao:nth-child(3){
+    margin-bottom: 40px;
+}
+
+.acoes-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 80px;
+}
+
+.acoes-card {
+    width: 460px;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.19);
     background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 200px;
-    padding: 20px;
+    padding: 10px;
+}
+
+.acoes-card a {
+    text-decoration: none;
+    color: #000;
+}
+
+.acoes-card img {
+    width: 100%;
+    height: 200px;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.19);
+    object-fit: cover;
+}
+
+.acoes-card img:hover {
+    transition: all .3s;
+    filter: brightness(0.5);
+}
+
+.acoes-card-descricao {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding: 10px 0;
+    gap: 10px;
+    font-size: 16px;
 }
 
-@media (max-width: 768px) {
-    .fixed-nav nav ul {
-       
+.acoes-card-descricao button {
+    font-size: 14px;
+    height: 20px;
+    width: 100px;
+    border: 1px solid black;
+    background-color: transparent;
+    color: #000000;
+}
+
+.acoes-card-descricao button:hover {
+    cursor: pointer;
+    transition: .2s;
+    background-color: #7ac693;
+}
+
+.contato-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+    gap: 10px;
+}
+
+.contato-section h2 {
+    font-size: 25px;
+}
+
+.contato-section p {
+    color: rgb(72, 71, 71);
+    font-size: 14px;
+    text-align: center;
+    width: 500px;
+}
+
+.contato-section form{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-section input {
+    height: 30px;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: 1px solid;
+}
+
+.contato-section input::placeholder {
+    font-size: 14px;
+}
+
+.contato-section label {
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+.contato-section textarea {
+    padding: 5px 10px;
+}
+
+.contato-section form button {
+    margin-top: 40px;
+    padding: 10px 30px;
+    font-size: 17px;
+    background-color: #135B2B;
+    border: 1px solid #1F472E;
+    color: #eeeeee;
+    border-radius: 8px;
+}
+
+.contato-section form button:hover {
+    transition: all .4s;
+    transform: scale(1.03);
+    background-color: #135B2B;
+}
+
+.rodape {
+    background-color: #c7c3c3;
+    padding: 40px 0 20px 0;
+}
+
+.rodape  .links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.links ul {
+    list-style: none;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.links .social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 25px;
+}
+
+.rodape p {
+    text-align: center;
+    padding: 60px 0 0 0;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: #000;
+}
+
+.rodape a:hover {
+    transition: .2s;
+    color: #5a5a5a;
+}
+
+
+.nav-button {
+    display: none;
+    border: 0;
+    border-radius: 4px;
+    background-color: transparent;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.nav-button i {
+    color: #f1f1f1;
+}
+
+.overlay {
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.9);
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;    
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.overlay a:hover , .overlay a:hover{
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-width: 1024px){
+    #cabecalho {
+        flex-direction: row-reverse;
+    }
+
+    .cabecalho-nav {
+        display: none;
+    }
+
+    .acoes-grid {
+        grid-template-columns: auto;
+    }
+
+    .nav-button {
+        display: block;
+    }
+
+    .acoes-descricao {
+        width: 750px;
+    }
+
+    .acoes-card {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .acoes-titulo {
+        font-size: 25px;
+    }
+
+    .acoes-descricao {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .acoes-card {
+        width: 400px;
+    }
+
+    .contato-section p {
+        width: 400px;
+    }
+
+    .contato-section form{
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rodape .links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .rodape .social-links {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .acoes-descricao:nth-child(3) {
+        margin-bottom: 150px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .cabecalho {
+        position: fixed;
+        width: 100%;
+        z-index: 9;
+        padding: 5px 10px;
+    }
+
+    .acoes-cta {
+        font-size: 20px;
+    }
+
+    .acoes-titulo {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .acoes-descricao {
+        text-align: justify;
+        font-size: 16px;
+        color: #000000;
+    }
+
+    .acoes-card {
+        width: 370px;
+    }
+
+    .contato-section p {
+        width: 300px;
+    }
+
+    .contato-section form{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .overlay a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .acoes-titulo {
+        font-size: 25px;
+    }
+
+    .acoes-card{
+        width: 310px;
+    }
+}
