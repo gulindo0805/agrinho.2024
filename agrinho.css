@@ -201,3 +201,49 @@ body {
         justify-content: center;
     }
 }
+.botao {
+    display: inline-block;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+.campo-section img, .cidade-section img {
+    width: 600px;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+} .campo-section img, .cidade-section img {
+    width: 600px;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.veja-mais {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.veja-mais a {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+}
