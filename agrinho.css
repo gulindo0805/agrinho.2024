@@ -247,3 +247,29 @@ body {
     color: green;
     font-weight: bold;
 }
+.retangulo-grande {
+    background-color: #eaeaea; /* Cor de fundo do retângulo */
+    padding: 20px; /* Espaçamento interno */
+    margin-top: 20px; /* Espaço superior */
+    margin-bottom: 20px; /* Espaço inferior */
+    width: 100%; /* Largura total */
+    height: 600px; /* Altura do retângulo */
+    text-align: center; /* Centralizar conteúdo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* Alinhamento horizontal */
+}
+
+.quadrado-imagem {
+    width: 400px; /* Largura do quadrado */
+    height: 400px; /* Altura do quadrado */
+    background-color: lightblue; /* Cor de fundo do quadrado */
+    margin-right: 20px; /* Espaçamento à direita */
+}
+
+.carros {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
