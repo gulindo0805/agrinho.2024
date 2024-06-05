@@ -3,23 +3,53 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cabeçalho Verde</title>
+<title>Cabeçalho Complexo</title>
 <style>
   /* Estilo para o cabeçalho */
-  .cabecalho {
-    background-color: green;
-    padding: 70px;
+  header {
+    background-color: #4CAF50;
+    padding: 20px;
     text-align: center;
     color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,0.2);
+  }
+
+  /* Estilo para o botão de voltar */
+  .btn-back {
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  /* Estilo para o conteúdo abaixo do cabeçalho */
+  .content {
+    margin-top: 80px; /* Ajuste para evitar que o conteúdo seja sobreposto pelo cabeçalho */
+    padding: 20px;
   }
 </style>
 </head>
 <body>
 
-<!-- Cabeçalho verde -->
-<div class="cabecalho">
+<!-- Cabeçalho -->
+<header>
   <h1>Título do Texto</h1>
+  <!-- Botão de voltar -->
+  <button onclick="window.history.back()" class="btn-back">Voltar</button>
+</header>
+
+<!-- Conteúdo -->
+<div class="content">
+  <p>Aqui vai o conteúdo da sua página...</p>
 </div>
 
 </body>
 </html>
+
