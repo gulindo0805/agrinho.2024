@@ -273,4 +273,34 @@ body {
     height: 400px;
     object-fit: cover;
 }
+.campo-section img, .cidade-section img {
+    width: 200px;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin-bottom: 20px;
+}
 
+.veja-mais {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.veja-mais a {
+    text-decoration: none;
+    color: green; /* Alteração para verde */
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.button-container > div {
+    max-width: 200px;
+    text-align: center;
+    flex: 1;
+}
