@@ -273,9 +273,4 @@ body {
     height: 400px;
     object-fit: cover;
 }
- .campo-section {
-            width: 50%; /* Define a largura de cada seção */
-            float: left; /* Faz com que as seções fiquem uma ao lado da outra */
-            box-sizing: border-box; /* Considera o padding e a borda no cálculo da largura */
-            padding: 10px; /* Adiciona um espaçamento interno */
-        }
+
