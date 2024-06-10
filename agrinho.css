@@ -218,7 +218,7 @@ body {
 }
 
 .botao:hover {
-    background-color: white;
+    background-color: black;
     color: black;
     border: 2px solid #4CAF50;
 }
