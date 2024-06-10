@@ -304,3 +304,19 @@ body {
     text-align: center;
     flex: 1;
 }
+ .carrossel-item img {
+        width: 100%;
+        height: auto;
+    }
+    .button-container img {
+        width: 100%;
+        height: auto;
+    }
+    .button-container div {
+        flex: 1;
+        margin: 10px;
+    }
+    .button-container {
+        display: flex;
+        justify-content: space-around;
+    }
