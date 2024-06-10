@@ -249,7 +249,7 @@ body {
 }
 .retangulo-grande {
     background-color: #eaeaea; /* Cor de fundo do retângulo */
-    padding: 20px; /* Espaçamento interno */
+    padding: 60px; /* Espaçamento interno */
     margin-top: 20px; /* Espaço superior */
     margin-bottom: 20px; /* Espaço inferior */
     width: 100%; /* Largura total */
