@@ -31,3 +31,12 @@ function iniciarCarrosselCabecalho() {
 window.addEventListener('load', function() {
     iniciarCarrosselCabecalho();
 });
+// Script para fazer o carrossel trocar de imagem a cada 5 segundos
+const carrosselItems = document.querySelectorAll('.carrossel-item');
+let index = 0;
+
+setInterval(() => {
+    carrosselItems[index].style.display = 'none';
+    index = (index + 1) % carrosselItems.length;
+    carrosselItems[index].style.display = 'block';
+}, 5000);
