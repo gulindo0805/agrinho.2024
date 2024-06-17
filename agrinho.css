@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,600;1,600&display=swap');
 
 * {
     margin: 0;
@@ -321,4 +322,10 @@ body {
         display: flex;
         justify-content: space-around;
     }
-/*  */
+// <uniquifier>: Use a unique and descriptive class name
+.importe {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
