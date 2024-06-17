@@ -329,3 +329,9 @@ body {
   font-weight: 600;
   font-style: normal;
 }
+
+
+.imagem {
+    height: 800px;
+    width: 800px;
+}
