@@ -359,7 +359,7 @@ body {
         .imagem-texto {
             font-size: 18px;
             font-weight: bold;
-            text-align: right; /* Alinhei o texto à direita */
+            text-align: left; /* Alinhei o texto à direita */
             margin-right: 20px; /* Espaço entre a imagem e o texto */
         }
 
