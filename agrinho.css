@@ -345,7 +345,7 @@ body {
         }
 
         .imagens-rodape img {
-            width: 500px; /* Mantive o tamanho das imagens */
+            width: 300px; /* Mantive o tamanho das imagens */
             height: 500px;
             margin-right: 20px; /* Movido o texto para o outro lado */
             border-radius: 10px;
