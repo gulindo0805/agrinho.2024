@@ -345,7 +345,7 @@ body {
         }
 
         .imagens-rodape img {
-            width: 300px; /* Mantive o tamanho das imagens */
+            width: 500px; /* Mantive o tamanho das imagens */
             height: 500px;
             margin-right: 20px; /* Movido o texto para o outro lado */
             border-radius: 10px;
@@ -372,14 +372,14 @@ body {
         }
 
         .nova-imagem-rodape img {
-            width: 300px;
-            max-width: 300px; /* Defini o tamanho máximo da imagem */
+            width: 600px;
+            max-width: 600px; /* Defini o tamanho máximo da imagem */
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicionei uma sombra sutil */
         }
 
         .nova-imagem-rodape .veja-mais {
-            margin-top: 10px;
+            margin-top: 100px;
             text-align: center;
         }
 
