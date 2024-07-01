@@ -330,6 +330,13 @@ body {
   font-style: normal;
 }
 
+
+.imagem {
+    height: 400px;
+    width: 600px;
+    margin-left: 1200px;
+}
+
   .imagens-rodape {
             display: flex;
             flex-direction: column;
@@ -344,9 +351,9 @@ body {
         }
 
         .imagens-rodape img {
-            width: 500px; /* Mantive o tamanho das imagens */
-            height: 500px;
-            margin-right: 20px; /* Movido o texto para o outro lado */
+            width: 400px; /* Mantive o tamanho das imagens */
+            height: 400px;
+            margin-left: 20px; /* Movido o texto para o outro lado */
             border-radius: 10px;
             transition: transform 0.3s ease;
         }
@@ -358,7 +365,7 @@ body {
         .imagem-texto {
             font-size: 18px;
             font-weight: bold;
-            text-align: left; /* Alinhei o texto à direita */
+            text-align: right; /* Alinhei o texto à direita */
             margin-right: 20px; /* Espaço entre a imagem e o texto */
         }
 
@@ -371,7 +378,7 @@ body {
         }
 
         .nova-imagem-rodape img {
-            width: 600px;
+            width: 100%;
             max-width: 600px; /* Defini o tamanho máximo da imagem */
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicionei uma sombra sutil */
@@ -387,4 +394,3 @@ body {
             color: #333;
             font-weight: bold;
         }
-
