@@ -403,3 +403,14 @@ footer {
             color: #333;
             font-weight: bold;
         }
+ .zoom-img {
+            transition: transform 0.3s ease-in-out;
+        }
+        .zoom-img:hover {
+            transform: scale(1.1);
+        }
+
+        /* CSS for the yellow background */
+        body {
+            background-color: rgb(224, 224, 146);
+        }
